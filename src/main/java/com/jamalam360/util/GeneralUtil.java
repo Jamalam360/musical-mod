@@ -26,8 +26,7 @@ public class GeneralUtil {
             } else if (type == StatusTypes.VOLUME) {
                 client.player.sendMessage(new TranslatableText("Set volume to " + intArg), false);
             }
-        } catch (NullPointerException e) {
-            return;
+        } catch (NullPointerException ignored) {
         }
     }
 
@@ -38,8 +37,7 @@ public class GeneralUtil {
             if (type == StatusTypes.LOOPING) {
                 client.player.sendMessage(new TranslatableText("Looping now set to " + bool), false);
             }
-        } catch (NullPointerException e) {
-            return;
+        } catch (NullPointerException ignored) {
         }
     }
 
